@@ -2,7 +2,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="bg-[#2B12AE]  ">
-      <div className="flex items-center justify-between w-full mt-20">
+      <div className="flex items-center justify-between w-full mb-20 pt-14 ">
         <figure className="mt">
           <Image src="/hero.png" alt="Hero" width={700} height={700} />
         </figure>
