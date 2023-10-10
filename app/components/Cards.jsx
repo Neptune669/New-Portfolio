@@ -1,8 +1,8 @@
 import Image from "next/image";
 const Cards = () => {
   return (
-    <section className="max-w-6xl px-8 mx-auto">
-      <div className="grid grid-cols-3 gap-x-8 ">
+    <section className="px-8 mx-auto max-w-7xl">
+      <div className="grid lg:grid-cols-3 gap-x-8 ">
         <div className=" w-fit bg-[#210D92] flex flex-col gap-3 pb-8  text-white">
           <figure>
             <Image src="/card-1.jpg" alt="Hero" width={700} height={700} />

@@ -21,7 +21,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-6">
-          <button className="flex items-center gap-2 px-3 py-2 text-sm font-extrabold text-white btn">
+          <button className="flex items-center gap-2 px-3 py-2 text-sm font-extrabold bg-[#FB17CE] text-white btn">
             <Image src={save} alt="Search" width={20} height={20} /> Support
             site
           </button>

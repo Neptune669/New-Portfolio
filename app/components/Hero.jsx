@@ -20,7 +20,7 @@ const Hero = () => {
             <button className="px-8 py-4 text-center white-btn text-[#FB17CE] font-extrabold">
               Find out more
             </button>
-            <button className="px-8 py-4 font-extrabold text-center text-white btn">
+            <button className="px-8 py-4 font-extrabold text-center bg-[#FB17CE] text-white btn">
               Explore Products
             </button>
           </div>
