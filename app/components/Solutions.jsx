@@ -59,9 +59,9 @@ const Solutions = () => {
     },
   ];
   return (
-    <section className="flex flex-col gap-16 py-10 font-bold">
+    <section className="flex flex-col gap-16 px-8 py-10 font-bold">
       <header>
-        <h1 className="text-5xl text-primary">
+        <h1 className="text-4xl lg:text-5xl text-primary">
           Simple Solutions for <br />
           <span className="text-secondary">Complex Challenges</span>
         </h1>
@@ -69,7 +69,10 @@ const Solutions = () => {
       <main className="flex flex-col gap-8">
         <div className="grid gap-4 font-normal gap-y-10 lg:grid-cols-4 lg:gap-6 lg:gap-y-20">
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col gap-2 text-center">
+            <div
+              key={index}
+              className="flex flex-col gap-2 text-start lg:text-center"
+            >
               {item.image && (
                 <figure>
                   <Image
@@ -90,10 +93,10 @@ const Solutions = () => {
           ))}
         </div>
         <div className="flex items-center justify-center gap-6">
-          <button className="btn bg-[#210D94] w-fit px-4 py-4 text-white">
+          <button className="btn bg-[#210D94] w-fit py-2 px-4 lg:py-4 text-white">
             View more features
           </button>
-          <button className="white-btn bg-primary bg-[#fb17ce] w-fit px-4 py-4 text-white">
+          <button className="white-btn bg-primary bg-[#fb17ce] w-fit px-4 py-2 lg:py-4 text-white">
             View more features
           </button>
         </div>
