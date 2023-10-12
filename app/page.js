@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import Technology from "./components/Technology"
 import Solutions from "./components/Solutions"
 import NavBar from "./components/NavBar"
-
+import LogoSlider from "./components/LogoSlider"
 export default function Home() {
   return (
     <>
@@ -15,6 +15,7 @@ export default function Home() {
         <Technology />
         <Solutions />
       </main>
+      <LogoSlider />
     </>
   )
 }

@@ -1,5 +1,5 @@
 
-import NavBar from './components/NavBar'
+
 import './globals.css'
 
 
