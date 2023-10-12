@@ -25,16 +25,19 @@ const logos = [
 ];
 const LogoSlider = () => {
   return (
-    <section className="py-8 bg-[#D6D6D6]">
-      <Marquee pauseOnHover duration={200}>
+    <section className="py-8 bg-[#d6d6d6d0] my-12">
+      <Marquee pauseOnHover autofill duration={20}>
         <div className="flex gap-24">
           {logos.map(({ image, index }) => {
             return (
-              <figure
-                key={index}
-                className="flex items-center justify-center bg-[#D6D6D6] "
-              >
-                <Image src={image} alt="Hero" width={250} height={250} />
+              <figure key={index} className="flex bg-inherit">
+                <Image
+                  key={index}
+                  src={image}
+                  alt="Hero"
+                  width={250}
+                  height={250}
+                />
               </figure>
             );
           })}

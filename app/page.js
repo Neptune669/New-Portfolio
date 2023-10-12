@@ -4,6 +4,7 @@ import Technology from "./components/Technology"
 import Solutions from "./components/Solutions"
 import NavBar from "./components/NavBar"
 import LogoSlider from "./components/LogoSlider"
+import Software from "./components/Software"
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <Cards />
         <Technology />
         <Solutions />
+        <Software />
       </main>
       <LogoSlider />
     </>

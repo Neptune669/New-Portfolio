@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Technology = () => {
   return (
-    <section className="flex flex-col gap-8 px-8 mx-auto bg-white rounded-bl-lg lg:flex-row max-w-7xl">
+    <section className="flex flex-col gap-8 px-8 mx-auto rounded-bl-lg lg:flex-row max-w-7xl">
       <div className="flex flex-col gap-6 w-fit ">
         <h1 className="text-4xl font-extrabold">
           <span className="text-[#FB17CE]">Technology </span> <br />
