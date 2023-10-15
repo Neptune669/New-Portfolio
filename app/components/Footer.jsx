@@ -1,0 +1,76 @@
+import Image from "next/image";
+const Footer = () => {
+  return (
+    <section className="px-8 mr-auto text-white bg-[#210D94] rounded-tr-[150px] ">
+      <div className="grid mx-auto lg:grid-cols-4 py-14 max-w-7xl gap-x-12">
+        <ul className="flex flex-col gap-3">
+          <li className="self-start">
+            <Image src="/logo-footer.png" alt="logo" width={180} height={41} />
+          </li>
+          <li>
+            Objectively integrate enterprise wide strategic theme areas with
+            functionalized infrastructures. Interactively productize premium
+            mobile technologies.
+          </li>
+          <ul className="flex flex-col gap-0 font-bold">
+            <li>123456789</li>
+            <li>support.com</li>
+            <li>support.com</li>
+          </ul>
+        </ul>
+        <ul className="flex flex-col gap-5">
+          <li className="text-3xl font-bold">Applications</li>
+          <ul className="flex flex-col gap-6 ">
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              our products
+            </li>
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              our products
+            </li>
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              our products
+            </li>
+            <li className="hover:text-neutral-500">our products</li>
+          </ul>
+        </ul>
+        <ul className="flex flex-col gap-5">
+          <li className="text-3xl font-bold">Codiqa</li>
+          <ul className="flex flex-col gap-6 ">
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              about us
+            </li>
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              about us
+            </li>
+            <li className="border-b hover:text-neutral-500 border-[#ffffff52] py-2 w-fit">
+              about us
+            </li>
+            <li className="hover:text-neutral-500">about us</li>
+          </ul>
+        </ul>
+        <ul className="flex flex-col gap-5">
+          <li className="text-3xl font-bold">Connect</li>
+          <ul className="flex gap-4">
+            <li>Logo</li>
+            <li>Logo</li>
+            <li>Logo</li>
+            <li>Logo</li>
+          </ul>
+          <li>
+            Keep up to date with latest news and update about Codiqa, simply
+            subscribe with your email address.
+          </li>
+          <li>
+            <input
+              type="text"
+              placeholder="Emil Address"
+              className="px-6 py-4 rounded-full"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default Footer;

@@ -59,7 +59,7 @@ const Solutions = () => {
     },
   ];
   return (
-    <section className="flex flex-col gap-16 px-8 py-10 font-bold">
+    <section className="flex flex-col gap-16 px-8 py-10 mx-auto font-bold max-w-7xl">
       <header>
         <h1 className="text-4xl lg:text-5xl text-primary">
           Simple Solutions for <br />

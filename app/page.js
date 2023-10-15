@@ -8,16 +8,17 @@ import Software from "./components/Software"
 export default function Home() {
   return (
     <>
-      <NavBar />
 
       <Hero />
-      <main className="flex flex-col mx-auto max-w-7xl gap-14" >
+      <main className="flex flex-col gap-12 ">
         <Cards />
         <Technology />
         <Solutions />
         <Software />
+        <LogoSlider />
       </main>
-      <LogoSlider />
+
+
     </>
   )
 }
