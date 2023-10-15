@@ -12,7 +12,7 @@ const Card = ({ imgSrc, description, name }) => {
       {name && (
         <h1 className="text-3xl font-extrabold text-secondary">{name}</h1>
       )}{" "}
-      {description && <p>{description}</p>}
+      {description && <p className="lg:w-[90%] lg:text-lg">{description}</p>}
       <button className="px-4 py-3 text-sm font-bold text-white w-fit btn bg-primary">
         read more
       </button>
