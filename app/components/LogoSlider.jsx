@@ -34,9 +34,9 @@ const LogoSlider = () => {
                 <Image
                   key={index}
                   src={image}
-                  alt="Hero"
-                  width={250}
-                  height={250}
+                  alt="logo"
+                  width={175}
+                  height={175}
                 />
               </figure>
             );

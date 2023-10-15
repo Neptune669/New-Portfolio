@@ -6,11 +6,18 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+::selection {
+  color: white;
+  background-color: #fb17ce;
+}
 .text-primary {
   color: #fb17ce;
 }
 .text-secondary {
   color: #210d94;
+}
+.bg-primary {
+  background-color: #fb17ce;
 }
 .btn {
   border-radius: 3.125rem 3.125rem 0rem 3.125rem;

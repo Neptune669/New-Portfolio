@@ -5,6 +5,7 @@ import Solutions from "./components/Solutions"
 import NavBar from "./components/NavBar"
 import LogoSlider from "./components/LogoSlider"
 import Software from "./components/Software"
+import Team from "./components/team"
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
         <Solutions />
         <Software />
         <LogoSlider />
+        <Team />
       </main>
 
 

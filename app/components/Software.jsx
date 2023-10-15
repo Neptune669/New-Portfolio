@@ -7,7 +7,7 @@ const Software = () => {
           <Image src="/img-software.png" alt="Hero" width={700} height={700} />
         </figure>
         <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-6 border-b border-[#0000002b] pb-14">
+          <div className="flex flex-col gap-6 border-b border-[#0000002b] pb-14 w-fit">
             <h1 className="text-3xl font-extrabold lg:text-5xl text-[#210D94]">
               <span className="text-[#FB17CE]">Software for the </span> <br />
               Open Enterprise

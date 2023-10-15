@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Footer = () => {
   return (
-    <section className="px-8 mr-auto text-white bg-[#210D94] rounded-tr-[150px] ">
+    <section className="px-8 mr-auto py-14 mt-6 text-white bg-[#210D94] rounded-tr-[150px] ">
       <div className="grid mx-auto lg:grid-cols-4 py-14 max-w-7xl gap-x-12">
         <ul className="flex flex-col gap-3">
           <li className="self-start">
@@ -60,11 +60,26 @@ const Footer = () => {
             Keep up to date with latest news and update about Codiqa, simply
             subscribe with your email address.
           </li>
-          <li>
+          <li className="relative px-2 w-fit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="black"
+              className="absolute z-50 w-6 h-6 right-5 top-[17px] "
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+              />
+            </svg>
+
             <input
               type="text"
               placeholder="Emil Address"
-              className="px-6 py-4 rounded-full"
+              className="z-10 px-6 py-4 rounded-full "
             />
           </li>
         </ul>
