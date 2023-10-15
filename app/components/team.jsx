@@ -43,17 +43,17 @@ const data = [
 
 const Team = () => {
   return (
-    <section className="flex flex-col gap-6 py-24">
-      <div className="flex flex-col gap-6 mx-auto max-w-7xl">
-        <ul className="flex flex-col gap-x-16 w-fit">
+    <section className="flex flex-col gap-6 px-8 py-24">
+      <div className="flex flex-col gap-6 mx-auto gap-x-16 max-w-7xl">
+        <ul className="flex flex-col gap-6 w-fit">
           <SectionHeader title="Great Software" titleTwo="with Codiqa Team" />
-          <p className="w-1/2">
+          <p className="lg:w-1/2">
             Completely synergize resource taxing relationships via premier niche
             markets. Dynamically innovate resource-leveling customer service for
             state of the art customer service.
           </p>
         </ul>
-        <div className="grid grid-cols-3 gap-9">
+        <div className="grid lg:grid-cols-3 gap-9">
           {data.map((item, index) => {
             return <Card key={index} {...item} />;
           })}
