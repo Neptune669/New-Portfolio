@@ -23,7 +23,7 @@ const Card = ({ imgSrc, description, name }) => {
 const data = [
   {
     imgSrc: "/img-people-01.png",
-    name: "ahmed fathi",
+    name: "Calvin Wilxcox",
     description:
       "Credibly innovate granular internal or organic sources whereas high standards in web-readiness.",
   },
