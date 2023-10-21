@@ -1,15 +1,13 @@
 "use client";
 import Counting from "./NumberCounter";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
-const Technology = () => {
+const Technology = ({ title, titleTwo, ImgSrc }) => {
   return (
     <section className="flex flex-col gap-8 px-8 mx-auto rounded-bl-lg lg:flex-row max-w-7xl">
       <div className="flex flex-col gap-6 w-fit ">
-        <h1 className="text-4xl font-extrabold">
-          <span className="text-[#FB17CE]">Technology </span> <br />
-          for Innovators
-        </h1>
+        <SectionHeader title={title} titleTwo={titleTwo} />
         <p className="text-[181818]">
           Objectively integrate enterprise-wide strategic theme areas with{" "}
           <br />
@@ -45,12 +43,7 @@ const Technology = () => {
         </button>
       </div>
       <figure>
-        <Image
-          src="/technology.png"
-          width={700}
-          height={700}
-          alt="Technology"
-        />
+        <Image src={ImgSrc} width={700} height={700} alt="Technology" />
       </figure>
     </section>
   );

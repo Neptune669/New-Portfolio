@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 
 const IconCard = ({ IconSrc, Title, Description }) => {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 ">
       <li>
         {IconSrc && (
           <Image src={IconSrc} alt="Icon" width={50} height={50}></Image>

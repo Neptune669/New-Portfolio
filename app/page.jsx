@@ -10,11 +10,21 @@ import Join from "./components/Join";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero
+        TitleOne={"Applications"}
+        TitleTwo={"Made fun"}
+        Description={
+          "Appropriately communicate one-to-one technology after plug-and-play networks. Quickly aggregate B2B users and worldwide resource-leveling potentialities."
+        }
+      />
       <main className="flex flex-col gap-12 ">
         <Cards />
 
-        <Technology />
+        <Technology
+          title={"Technology"}
+          titleTwo={"for Innovators"}
+          ImgSrc={"/technology.png"}
+        />
 
         <Solutions />
 
