@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import Link from "next/link";
 
 const NewMenu = () => (
   <Dialog.Root>
@@ -49,13 +50,12 @@ const NewMenu = () => (
         </Dialog.Title>
 
         <div className="flex flex-col items-center justify-center gap-4 text-black ">
-          <a
+          <Link
             className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            exact
-            to="/"
+            href={"/"}
           >
             Home
-          </a>
+          </Link>
           <a
             className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
             exact

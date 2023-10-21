@@ -5,6 +5,7 @@ import Solutions from "../components/Solutions";
 import Technology from "../components/Technology";
 import Team from "../components/team";
 import LogoSlider from "../components/LogoSlider";
+import Innovators from "../components/Innovators";
 
 const About = () => {
   return (
@@ -18,12 +19,14 @@ const About = () => {
         }
       />
       <Solutions />
+      <Innovators />
       <Technology
         title={"These are"}
         titleTwo={"Our Numbers"}
         ImgSrc={"/about us.png"}
       />
       <Cards />
+
       <Team />
       <LogoSlider />
     </section>
