@@ -2,6 +2,7 @@
 import Image from "next/image";
 import save from "../assets/save.svg";
 import search from "../assets/search.svg";
+import Link from "next/link";
 import NewMenu from "./newMenu";
 const NavBar = () => {
   return (
@@ -12,8 +13,13 @@ const NavBar = () => {
             <Image src="/logo.png" alt="Logo" width={180} height={180} />
           </figure>
           <ul className="hidden text-white lg:flex lg:items-center lg:gap-4">
-            <li>Home</li>
-            <li>About us</li>
+            <li>
+              {" "}
+              <Link href="/">Home</Link>{" "}
+            </li>
+            <li>
+              <Link href="/about">About us</Link>
+            </li>
             <li>Pages</li>
             <li>Portfolio</li>
             <li>News</li>

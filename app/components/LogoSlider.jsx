@@ -25,7 +25,7 @@ const logos = [
 ];
 const LogoSlider = () => {
   return (
-    <section className="py-8 bg-[#d6d6d6d0] my-12">
+    <section className="py-8 min-w-full bg-[#d6d6d6d0] my-12">
       <Marquee pauseOnHover autofill duration={20}>
         <div className="flex gap-24">
           {logos.map(({ image, index }) => {
@@ -35,8 +35,8 @@ const LogoSlider = () => {
                   key={index}
                   src={image}
                   alt="logo"
-                  width={175}
-                  height={175}
+                  width={150}
+                  height={150}
                 />
               </figure>
             );

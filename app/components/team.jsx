@@ -43,7 +43,7 @@ const data = [
 
 const Team = () => {
   return (
-    <section className="flex flex-col gap-6 px-8 py-24">
+    <section className="flex flex-col gap-6 px-8 py-24 mx-auto max-w-7xl">
       <div className="flex flex-col gap-6 mx-auto gap-x-16 max-w-7xl">
         <ul className="flex flex-col gap-6 w-fit">
           <SectionHeader title="Great Software" titleTwo="with Codiqa Team" />

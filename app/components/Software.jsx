@@ -2,7 +2,7 @@ import Image from "next/image";
 const Software = () => {
   return (
     <section>
-      <div className="flex flex-col gap-6 px-8 lg:flex-row">
+      <div className="flex flex-col gap-6 px-8 mx-auto max-w-7xl lg:flex-row">
         <figure className="min-w-fit">
           <Image src="/img-software.png" alt="Hero" width={700} height={700} />
         </figure>
