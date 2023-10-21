@@ -67,6 +67,18 @@ const Join = () => {
             return <IconCard key={index} {...item} />;
           })}
         </div>
+        <ul className="flex justify-center gap-4">
+          <li>
+            <button className="px-16 py-5 text-sm font-bold text-white btn bg-primary">
+              Read more
+            </button>{" "}
+          </li>
+          <li>
+            <button className="px-16 py-5 text-sm font-bold text-white white-btn bg-secondary">
+              Read more
+            </button>{" "}
+          </li>
+        </ul>
       </main>
     </section>
   );
