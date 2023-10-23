@@ -18,13 +18,17 @@ const NavBar = () => {
               <Link href="/">Home</Link>{" "}
             </li>
             <li>
-              <Link href="/about">About us</Link>
+              <Link className="hover:text-primary" href="/about">
+                About us
+              </Link>
             </li>
-            <li>Pages</li>
+            <li>
+              <Link href="/">pages</Link>{" "}
+            </li>
             <li>Portfolio</li>
-            <li>News</li>
+            {/* <li>News</li>
             <li>Elements</li>
-            <li>Shop</li>
+            <li>Shop</li> */}
           </ul>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-6">
