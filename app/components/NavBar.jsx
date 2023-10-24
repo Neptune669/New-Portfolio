@@ -23,7 +23,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/">pages</Link>{" "}
+              <Link href="/services">Services</Link>{" "}
             </li>
             <li>Portfolio</li>
             {/* <li>News</li>
