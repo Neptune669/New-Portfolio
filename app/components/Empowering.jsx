@@ -45,7 +45,7 @@ const Empowering = () => {
             alt="img-services"
           />
         </figure>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <h1 className="text-4xl text-white lg:text-5xl">
             Empowering the <br />
             <span className="font-bold text-primary">Internet Generation</span>
@@ -57,9 +57,9 @@ const Empowering = () => {
               e-services.
             </li>
             <li className="w-[80%]">
-              Collaboratively administrate turnkey channels whereas virtual
-              e-tailers. Objectively seize scalable metrics whereas proactive
-              e-services.
+              Distinctively exploit optimal alignments for intuitive bandwidth.
+              Quickly coordinate e-business applications through revolutionary
+              catalysts for change.
             </li>
           </ul>
           <div className="grid gap-y-4 lg:grid-cols-3 ">

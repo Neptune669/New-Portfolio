@@ -20,7 +20,7 @@ const Hero = ({ FlexDirection, TitleOne, TitleTwo, Description }) => {
             <button className="lg:px-10 px-4 py-5 Lg:py-4 text-center btn bg-white text-[#FB17CE] font-extrabold">
               Find out more
             </button>
-            <button className="lg:px-10 px-4 py-5 Lg:py-4 text-center white-btn bg-[#FB17CE] text-white font-extrabold">
+            <button className="lg:px-10 px-4 py-5 Lg:py-4 text-center white-btn bg-[#FB17CE] text-white font-extrabold hover:shadow-2xl">
               Explore Products
             </button>
           </div>
