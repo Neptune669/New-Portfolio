@@ -2,6 +2,7 @@ import Empowering from "../components/Empowering";
 import LogoSlider from "../components/LogoSlider";
 import NewHero from "../components/NewHero";
 import ServiceSolutions from "../components/ServiceSolutions";
+import Touch from "../components/Touch";
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <ServiceSolutions />
       <Empowering />
       <LogoSlider />
+      <Touch />
     </main>
   );
 };
