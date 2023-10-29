@@ -1,11 +1,12 @@
 import Image from "next/image";
+import NewHero from "./NewHero";
 
 const PortfolioCard = ({ imgSrc, title, description }) => {
   return (
-    <ul className="bg-[#F5F5F5] w-[400px] pb-6 flex flex-col gap-3 rounded-lg hover:shadow-xl shadow-md ">
+    <ul className="bg-[#F5F5F5] w-[300px] lg:w-[25rem] pb-6 flex flex-col gap-3 rounded-lg hover:shadow-xl shadow-md ">
       <li>
         <Image
-          className="rounded-lg"
+          className="rounded-lg w-[350px] lg:w-[450px]"
           src={imgSrc}
           alt="Logo"
           width={450}
@@ -72,11 +73,14 @@ const data = [
 ];
 const PortfolioList = () => {
   return (
-    <section className="px-8 py-12 mx-auto max-w-7xl">
-      <main className="grid gap-y-10 gap-x-6 lg:grid-cols-3 ">
-        {data.map((item, index) => {
-          return <PortfolioCard key={index} {...item} />;
-        })}
+    <section className="py-12 mx-auto max-w-7xl">
+      <main className="flex flex-col gap-6 ">
+        <NewHero />
+        <div className="flex flex-col gap-8 px-8 lg:grid md:gap-y-10 md:gap-x-9 md:grid-cols-3">
+          {data.map((item, index) => {
+            return <PortfolioCard key={index} {...item} />;
+          })}
+        </div>
       </main>
     </section>
   );
