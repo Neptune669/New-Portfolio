@@ -58,7 +58,7 @@ const Touch = () => {
           <li>
             <p>
               Visit our agency or simply send us an email anytime you want. If
-              you have any <br /> questions, please feel free to contact us.
+              you have any  questions, please feel free to contact us.
             </p>
           </li>
           <li className="border-b"></li>
