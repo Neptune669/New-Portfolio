@@ -14,7 +14,10 @@ const Technology = ({ title, titleTwo, ImgSrc }) => {
           functionalized infrastructures. Interactively productize premium
           technologies <br /> whereas interdependent quality vectors.
         </p>
-        <div className="grid items-center lg:grid-cols-3 gap-y-4">
+        <div
+          data-aos="fade-right"
+          className="grid items-center lg:grid-cols-3 gap-y-4"
+        >
           <ul className="flex flex-col gap-6 lg:border-r  lg:border-[#0000002b] w-48 ">
             <li className="text-[#210D94]  text-4xl">
               <Counting startValue={1} endValue={250} duration={0.5} />
@@ -42,7 +45,7 @@ const Technology = ({ title, titleTwo, ImgSrc }) => {
           find out more
         </button>
       </div>
-      <figure>
+      <figure data-aos="fade-left">
         <Image src={ImgSrc} width={700} height={700} alt="Technology" />
       </figure>
     </section>

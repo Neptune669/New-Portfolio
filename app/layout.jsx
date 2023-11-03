@@ -1,4 +1,6 @@
+import { AOSInit } from "./aos";
 import Footer from "./components/Footer";
+
 import NavBar from "./components/NavBar";
 import "./globals.css";
 
@@ -10,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body>
         <NavBar />
         {children}

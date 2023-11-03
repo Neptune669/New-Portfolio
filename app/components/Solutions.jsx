@@ -7,6 +7,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-right",
     },
     {
       image: "conect.svg",
@@ -14,6 +15,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-left",
     },
     {
       image: "multi.svg",
@@ -21,6 +23,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-right",
     },
     {
       image: "lang.svg",
@@ -28,6 +31,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-left",
     },
     {
       image: "media.svg",
@@ -35,6 +39,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-right",
     },
     {
       image: "sharing.svg",
@@ -42,6 +47,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-left",
     },
     {
       image: "wiz.svg",
@@ -49,6 +55,7 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-right",
     },
     {
       image: "vir.svg",
@@ -56,10 +63,14 @@ const Solutions = () => {
       title: "Online at all times",
       description:
         "Nanotechnology immersion of the information highway will close the loop on bottom line.",
+      aos: "fade-left",
     },
   ];
   return (
-    <section className="flex flex-col gap-16 px-8 py-10 mx-auto font-bold max-w-7xl">
+    <section
+      data-aos="fade-up"
+      className="flex flex-col gap-16 px-8 py-10 mx-auto font-bold max-w-7xl"
+    >
       <header>
         <h1 className="text-4xl lg:text-5xl text-primary">
           Simple Solutions for <br />
@@ -68,8 +79,9 @@ const Solutions = () => {
       </header>
       <main className="flex flex-col gap-8">
         <div className="grid gap-4 font-normal gap-y-10 lg:grid-cols-4 lg:gap-6 lg:gap-y-20">
-          {items.map((item, index) => (
+          {items.map((item, index, aos) => (
             <div
+              data-aos={item.aos}
               key={index}
               className="flex flex-col gap-2 text-start lg:text-center"
             >

@@ -51,7 +51,9 @@ const Footer = () => {
         <ul className="flex flex-col gap-5">
           <li className="text-3xl font-bold">Connect</li>
           <ul className="flex gap-4">
-            <li>Logo</li>
+            <li className="text-white">
+              <Image src="/facebook.svg" alt="logo" width={20} height={20} />
+            </li>
             <li>Logo</li>
             <li>Logo</li>
             <li>Logo</li>

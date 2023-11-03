@@ -12,7 +12,7 @@ const NavBar = () => {
           <figure className="flex items-center">
             <Image src="/logo.png" alt="Logo" width={180} height={180} />
           </figure>
-          <ul className="hidden text-white lg:flex lg:items-center lg:gap-4">
+          <ul className="hidden text-white lg:flex lg:items-center lg:gap-4 ">
             <li>
               {" "}
               <Link href="/">Home</Link>{" "}

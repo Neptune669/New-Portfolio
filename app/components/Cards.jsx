@@ -1,13 +1,13 @@
 import Image from "next/image";
 const Cards = () => {
   return (
-    <section className="px-8 mx-auto max-w-7xl">
+    <section data-aos="fade-right" className="px-8 mx-auto max-w-7xl">
       <div className="grid lg:grid-cols-3 gap-y-12 gap-x-8 ">
         <div className=" w-fit bg-[#210D92] flex flex-col gap-3 pb-8  text-white">
           <figure>
             <Image src="/card-1.jpg" alt="Hero" width={700} height={700} />
           </figure>
-          <div className="flex flex-col gap-4 px-4">
+          <div data-aos="fade-right" className="flex flex-col gap-4 px-4">
             <h1 className="text-3xl font-extrabold">
               Possibilities are Infinite
             </h1>
@@ -20,7 +20,10 @@ const Cards = () => {
             </button>
           </div>
         </div>
-        <div className=" w-fit bg-[#FB17CE] flex flex-col gap-3 pb-8  text-white">
+        <div
+          data-aos="fade-down"
+          className=" w-fit bg-[#FB17CE] flex flex-col gap-3 pb-8  text-white"
+        >
           <figure>
             <Image src="/card-02.jpg" alt="Hero" width={700} height={700} />
           </figure>
@@ -39,7 +42,7 @@ const Cards = () => {
           <figure>
             <Image src="/card-03.jpg" alt="Hero" width={700} height={700} />
           </figure>
-          <div className="flex flex-col gap-4 px-4">
+          <div data-aos="fade-left" className="flex flex-col gap-4 px-4">
             <h1 className="text-3xl font-extrabold">
               Invent the Future with Codiqa{" "}
             </h1>

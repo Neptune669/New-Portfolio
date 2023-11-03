@@ -1,9 +1,12 @@
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 
-const IconCard = ({ IconSrc, Title, Description }) => {
+const IconCard = ({ IconSrc, Title, Description, aos }) => {
   return (
-    <ul className="flex flex-col gap-4 ">
+    <ul
+      data-aos={aos}
+      className="flex flex-col items-center justify-center gap-4 "
+    >
       <li>
         {IconSrc && (
           <Image src={IconSrc} alt="Icon" width={50} height={50}></Image>
@@ -21,31 +24,37 @@ const IconCardData = [
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-right",
   },
   {
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-left",
   },
   {
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-left",
   },
   {
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-right",
   },
   {
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-right",
   },
   {
     IconSrc: "/like.svg",
     Title: "Great Software",
     Description: "Phosfluorescently leverage others high impact solutions",
+    aos: "fade-left",
   },
 ];
 
@@ -62,7 +71,7 @@ const Join = () => {
           </p>
         </div>
         <div className="border-b border-[#0000002b]"></div>
-        <div className="grid grid-cols-6 ">
+        <div className="flex flex-col gap-4 lg:gap-2 lg:grid lg:grid-cols-6 ">
           {IconCardData.map((item, index) => {
             return <IconCard key={index} {...item} />;
           })}

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 
-const Card = ({ imgSrc, description, name }) => {
+const Card = ({ imgSrc, description, name, aos }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div data-aos={aos} className="flex flex-col gap-4">
       {imgSrc && (
         <figure>
           <Image src={imgSrc} width={1200} height={1200} alt="person" />
@@ -26,18 +26,21 @@ const data = [
     name: "Calvin Wilxcox",
     description:
       "Credibly innovate granular internal or organic sources whereas high standards in web-readiness.",
+    aos: "flip-right",
   },
   {
     imgSrc: "/img-people-02.png",
     name: "Lorene Howard",
     description:
       "Credibly innovate granular internal or organic sources whereas high standards in web-readiness.",
+    aos: "flip-left",
   },
   {
     imgSrc: "/img-people-03.png",
     name: "Beth Carver",
     description:
       "Credibly innovate granular internal or organic sources whereas high standards in web-readiness.",
+    aos: "flip-right",
   },
 ];
 

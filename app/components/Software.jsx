@@ -2,11 +2,14 @@ import Image from "next/image";
 const Software = () => {
   return (
     <section>
-      <div className="flex flex-col gap-6 px-8 mx-auto max-w-7xl lg:flex-row">
-        <figure className="min-w-fit">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col gap-6 px-8 mx-auto max-w-7xl lg:flex-row"
+      >
+        <figure data-aos="fade-right" className="min-w-fit">
           <Image src="/img-software.png" alt="Hero" width={700} height={700} />
         </figure>
-        <div className="flex flex-col gap-10">
+        <div data-aos="fade-left" className="flex flex-col gap-10">
           <div className="flex flex-col gap-6 border-b border-[#0000002b] pb-14 w-fit">
             <h1 className="text-3xl font-extrabold lg:text-5xl text-[#210D94]">
               <span className="text-[#FB17CE]">Software for the </span> <br />
