@@ -1,9 +1,12 @@
 import Image from "next/image";
 
-const Card = ({ icon, title, description, color }) => {
+const Card = ({ icon, title, description, color, aos }) => {
   return (
     <div>
-      <ul className="flex flex-col items-center justify-center gap-6 px-5 py-24 bg-white border shadow-md">
+      <ul
+        data-aos={aos}
+        className="flex flex-col items-center justify-center gap-6 px-5 py-24 bg-white border shadow-md"
+      >
         <li>
           <Image src={icon} width={50} height={50} alt="icon" />
         </li>
@@ -28,6 +31,7 @@ const data = [
     description:
       "Deliver efficient performance-based methods of empowerment whereas distributed expertise.",
     color: "primary",
+    aos: "flip-right",
   },
   {
     icon: "/mobile.svg",
@@ -35,6 +39,7 @@ const data = [
     description:
       "Deliver efficient performance-based methods of empowerment whereas distributed expertise.",
     color: "secondary",
+    aos: "flip-left",
   },
   {
     icon: "/mobile.svg",
@@ -42,6 +47,7 @@ const data = [
     description:
       "Deliver efficient performance-based methods of empowerment whereas distributed expertise.",
     color: "primary",
+    aos: "flip-right",
   },
   {
     icon: "/mobile.svg",
@@ -49,6 +55,7 @@ const data = [
     description:
       "Deliver efficient performance-based methods of empowerment whereas distributed expertise.",
     color: "secondary",
+    aos: "flip-right",
   },
   // Add more data objects with different colors if needed
 ];

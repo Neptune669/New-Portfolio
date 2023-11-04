@@ -3,7 +3,10 @@ import NewHero from "./NewHero";
 
 const PortfolioCard = ({ imgSrc, title, description }) => {
   return (
-    <ul className="bg-[#F5F5F5] w-[300px] lg:w-[25rem] pb-6 flex flex-col gap-3 rounded-lg hover:shadow-xl shadow-md ">
+    <ul
+      data-aos="flip-right"
+      className="bg-[#F5F5F5] w-[300px] lg:w-[25rem] pb-6 flex flex-col gap-3 rounded-lg hover:shadow-xl shadow-md "
+    >
       <li>
         <Image
           className="rounded-lg w-[350px] lg:w-[450px]"

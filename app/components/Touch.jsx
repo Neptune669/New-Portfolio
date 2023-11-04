@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Card = ({ icon, RowOneDes, RowTwoDes, title }) => {
   return (
-    <ul className="flex gap-3">
+    <ul data-aos="flip-up" className="flex gap-3">
       <li>
         <figure>
           <Image src={icon} alt="icon" width={50} height={50} />
@@ -58,7 +58,7 @@ const Touch = () => {
           <li>
             <p>
               Visit our agency or simply send us an email anytime you want. If
-              you have any  questions, please feel free to contact us.
+              you have any questions, please feel free to contact us.
             </p>
           </li>
           <li className="border-b"></li>
@@ -68,7 +68,13 @@ const Touch = () => {
             ))}
           </ul>
         </ul>
-        <Image src="/about us.png" alt="img-touch" width={600} height={600} />
+        <Image
+          data-aos="fade-left"
+          src="/about us.png"
+          alt="img-touch"
+          width={600}
+          height={600}
+        />
       </main>
     </section>
   );

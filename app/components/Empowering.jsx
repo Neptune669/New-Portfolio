@@ -2,7 +2,10 @@
 import Image from "next/image";
 const Card = ({ icon, title, Description }) => {
   return (
-    <ul className="flex flex-col items-center gap-4 text-white">
+    <ul
+      data-aos="fade-down"
+      className="flex flex-col items-center gap-4 text-white"
+    >
       <li>
         <figure>
           <Image src={icon} alt="icon" width={60} height={60}></Image>
@@ -37,7 +40,7 @@ const Empowering = () => {
   return (
     <section className="bg-[#210D94] py-16 ">
       <main className="flex flex-col self-start justify-between gap-20 px-8 lg:flex-row ">
-        <figure className="w-full">
+        <figure className="w-full" data-aos="fade-right">
           <Image
             src="/img-services.png"
             width={650}
@@ -50,7 +53,10 @@ const Empowering = () => {
             Empowering the <br />
             <span className="font-bold text-primary">Internet Generation</span>
           </h1>
-          <ul className="grid font-semibold text-white gap-y-10 lg:grid-cols-2 ">
+          <ul
+            data-aos="fade-up"
+            className="grid font-semibold text-white gap-y-10 lg:grid-cols-2 "
+          >
             <li className="w-[80%]">
               Collaboratively administrate turnkey channels whereas virtual
               e-tailers. Objectively seize scalable metrics whereas proactive
