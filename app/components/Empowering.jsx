@@ -2,17 +2,14 @@
 import Image from "next/image";
 const Card = ({ icon, title, Description }) => {
   return (
-    <ul
-      data-aos="fade-down"
-      className="flex flex-col items-center gap-4 text-white"
-    >
+    <ul data-aos="fade-down" className="flex flex-col items-center gap-4 ">
       <li>
         <figure>
           <Image src={icon} alt="icon" width={60} height={60}></Image>
         </figure>
       </li>
-      <li className="text-3xl font-extrabold">{title}</li>
-      <li className="w-[90%] text-center">{Description}</li>
+      <li className="text-3xl font-extrabold text-primary">{title}</li>
+      <li className="w-[90%]  text-center">{Description}</li>
     </ul>
   );
 };
@@ -38,7 +35,7 @@ const data = [
 ];
 const Empowering = () => {
   return (
-    <section className="bg-[#210D94] py-16 ">
+    <section className="py-16 ">
       <main className="flex flex-col self-start justify-between gap-20 px-8 lg:flex-row ">
         <figure className="w-full" data-aos="fade-right">
           <Image
@@ -49,13 +46,13 @@ const Empowering = () => {
           />
         </figure>
         <div className="flex flex-col gap-8">
-          <h1 className="text-4xl text-white lg:text-5xl">
+          <h1 className="text-4xl lg:text-5xl">
             Empowering the <br />
             <span className="font-bold text-primary">Internet Generation</span>
           </h1>
           <ul
             data-aos="fade-up"
-            className="grid font-semibold text-white gap-y-10 lg:grid-cols-2 "
+            className="grid font-semibold gap-y-10 lg:grid-cols-2 "
           >
             <li className="w-[80%]">
               Collaboratively administrate turnkey channels whereas virtual

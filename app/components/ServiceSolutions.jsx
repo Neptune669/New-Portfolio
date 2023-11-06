@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Card = ({ icon, title, description, color, aos }) => {
+const Card = ({ icon, title, description, aos }) => {
   return (
     <div>
       <ul
@@ -13,9 +13,7 @@ const Card = ({ icon, title, description, color, aos }) => {
         <li>{title}</li>
         <li className="text-center">{description}</li>
         <li>
-          <button
-            className={`px-16 py-5 text-sm font-bold text-white btn bg-${color}`}
-          >
+          <button className="px-16 py-5 text-sm font-bold text-primary ">
             Read more
           </button>
         </li>
