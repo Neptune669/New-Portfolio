@@ -37,7 +37,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -53,7 +53,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -69,7 +69,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -85,7 +85,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -101,7 +101,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -128,7 +128,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -144,7 +144,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -160,7 +160,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -176,7 +176,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"
@@ -192,7 +192,7 @@ const Software = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="none"
-                      className="w-6 h-6 fill-[#FB17CE]"
+                      className="w-6 h-6 fill-[#0C356A]"
                     >
                       <path
                         strokeLinecap="round"

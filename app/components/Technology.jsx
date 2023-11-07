@@ -27,13 +27,13 @@ const Technology = ({ title, titleTwo, ImgSrc }) => {
             </li>
           </ul>
           <ul className="flex flex-col gap-6 lg:px-3 lg:border-r lg:justify-center lg:items-center lg:border-[#0000002b] w-48 ">
-            <li className="text-[#FB17CE]  text-4xl">
+            <li className="text-[#0c356a]  text-4xl">
               <Counting startValue={1} endValue={120} duration={0.5} />
             </li>
             <li className="text-center">Languages and countries</li>
           </ul>
           <ul className="flex flex-col w-48 gap-6 px-3">
-            <li className="text-[#83E5C5]   text-4xl">
+            <li className="text-[#0174BE]   text-4xl">
               <Counting startValue={1} endValue={170} duration={0.5} />
             </li>
             <li>

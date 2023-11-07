@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="grid mx-auto lg:grid-cols-4 gap-y-16 py-14 max-w-7xl gap-x-12">
         <ul className="flex flex-col gap-3">
           <li className="self-start">
-            <Image src="/logo-footer.png" alt="logo" width={180} height={41} />
+            <h1 className="text-4xl font-bold text-black ">Xtech</h1>
           </li>
           <li>
             Objectively integrate enterprise wide strategic theme areas with
