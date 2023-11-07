@@ -1,107 +1,110 @@
-import * as Dialog from "@radix-ui/react-dialog";
+import {
+  FiUsers,
+  FiChevronDown,
+  FiTrash,
+  FiNavigation,
+  FiHome,
+} from "react-icons/fi";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { Dispatch, SetStateAction, useState } from "react";
+import { IconType } from "react-icons";
 
-const NewMenu = () => (
-  <Dialog.Root>
-    <Dialog.Trigger asChild>
-      <button className="text-white items-center flex  justify-between gap-2 py-2 bg-[#FB17CE]   px-[15px] font-medium leading-none border border-[#c0c0c0] rounded-full">
-        Menu{" "}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-4 h-6"
+const StaggeredDropDown = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="flex items-center justify-center p-8 ">
+      <motion.div animate={open ? "open" : "closed"} className="relative">
+        <button
+          onClick={() => setOpen((pv) => !pv)}
+          className="flex items-center gap-2 px-3 py-2 transition-colors bg-indigo-500 rounded-md text-indigo-50 hover:bg-indigo-500"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </button>
-    </Dialog.Trigger>
-    <Dialog.Portal>
-      <Dialog.Overlay className="bg-[#2c12ae29]  data-[state=open]:animate-overlayShow fixed inset-0" />
-      <Dialog.Content className="data-[state=open]:animate-contentShow border border-[#c0c0c0] fixed top-[40%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-lg bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
-        <Dialog.Title className=" m-0 text-[17px] font-medium ">
-          <ul className="flex items-center justify-between mb-4">
-            <li className="font-semibold text-black">Navigation</li>
-            <Dialog.Close asChild>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6 hover:cursor-pointer"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </li>
-            </Dialog.Close>
-          </ul>
-        </Dialog.Title>
+          <span className="text-sm font-medium">Menu</span>
+          <motion.span variants={iconVariants}>
+            <FiChevronDown />
+          </motion.span>
+        </button>
 
-        <div className="flex flex-col items-center justify-center gap-4 text-black ">
-          <Link
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            href={"/"}
-          >
-            Home
+        <motion.ul
+          initial={wrapperVariants.closed}
+          variants={wrapperVariants}
+          style={{ originY: "top", translateX: "-50%" }}
+          className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
+        >
+          <Link href="/">
+            <Option setOpen={setOpen} Icon={FiHome} text="Home" />
           </Link>
-          <a
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            exact
-            to="/about"
-          >
-            About us
-          </a>
-          <a
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            to="/services"
-          >
-            Services
-          </a>
-          <a
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            to="/sustainability"
-          >
-            Sustainability
-          </a>
-          <a
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            to="/Events"
-          >
-            Events
-          </a>
-          <a
-            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
-            to="/blogs"
-          >
-            Blogs
-          </a>
-          <a className="text-lg font-medium " to="/contact">
-            Contact
-          </a>
-          <div className="flex justify-end gap-[25px]"></div>
-        </div>
+          <Link href="/portfolio">
+            <Option setOpen={setOpen} Icon={FiUsers} text="portfolio" />
+          </Link>
+          <Link href="/about">
+            <Option setOpen={setOpen} Icon={FiNavigation} text="About Us" />
+          </Link>
+          {/* <Option setOpen={setOpen} Icon={FiTrash} text="Remove" /> */}
+        </motion.ul>
+      </motion.div>
+    </div>
+  );
+};
 
-        {/* <Dialog.Close asChild>
-          <button
-            className="text-violet11 hover:bg-violet4 focus:shadow-violet7 absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
-            aria-label="Close"
-          ></button>
-        </Dialog.Close> */}
-      </Dialog.Content>
-    </Dialog.Portal>
-  </Dialog.Root>
-);
+const Option = ({ text, Icon, setOpen }) => {
+  return (
+    <motion.li
+      variants={itemVariants}
+      onClick={() => setOpen(false)}
+      className="flex items-center w-full gap-2 p-2 text-xs font-medium transition-colors rounded-md cursor-pointer whitespace-nowrap hover:bg-indigo-100 text-slate-700 hover:text-indigo-500"
+    >
+      <motion.span variants={actionIconVariants}>
+        <Icon />
+      </motion.span>
+      <span>{text}</span>
+    </motion.li>
+  );
+};
 
-export default NewMenu;
+export default StaggeredDropDown;
+
+const wrapperVariants = {
+  open: {
+    scaleY: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    scaleY: 0,
+    transition: {
+      when: "afterChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const iconVariants = {
+  open: { rotate: 180 },
+  closed: { rotate: 0 },
+};
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      when: "beforeChildren",
+    },
+  },
+  closed: {
+    opacity: 0,
+    y: -15,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
+const actionIconVariants = {
+  open: { scale: 1, y: 0 },
+  closed: { scale: 0, y: -7 },
+};

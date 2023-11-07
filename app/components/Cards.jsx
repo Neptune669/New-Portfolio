@@ -1,3 +1,4 @@
+import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 const Cards = () => {
   return (
@@ -15,8 +16,8 @@ const Cards = () => {
               Credibly innovate granular internal or organic sources whereas
               high standards in web-readiness.
             </p>
-            <button className="px-4 py-2 font-extrabold text-center w-fit text-[#ffff] ">
-              Find out more
+            <button className="px-4 py-2 font-extrabold flex items-center gap-1 text-center w-fit text-[#ffff] ">
+              Find out more {<FiArrowRight />}
             </button>
           </div>
         </div>
@@ -33,8 +34,8 @@ const Cards = () => {
               Quickly cultivate optimal processes and tactical architectures.
               Completely iterate covalent strategic theme areas.
             </p>
-            <button className="px-4 py-2 font-extrabold text-center w-fit text-[#ffff] ">
-              Find out more
+            <button className="px-4 py-2 font-extrabold flex items-center gap-1 text-center w-fit text-[#ffff] ">
+              Find out more {<FiArrowRight />}
             </button>
           </div>
         </div>
@@ -50,8 +51,8 @@ const Cards = () => {
               Synergistically deliver performance based methods of empowerment
               whereas distributed expertise.
             </p>
-            <button className="px-4 py-2 font-extrabold text-center w-fit text-[#ffff] ">
-              Find out more
+            <button className="px-4 py-2 font-extrabold flex items-center gap-1 text-center w-fit text-[#ffff] ">
+              Find out more {<FiArrowRight />}
             </button>
           </div>
         </div>

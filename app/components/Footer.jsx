@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 const Footer = () => {
   return (
     <section className="px-8  mr-auto pt-14 mt-6 text-white bg-[#210D94] rounded-tr-[150px] ">
@@ -51,12 +52,18 @@ const Footer = () => {
         <ul className="flex flex-col gap-5">
           <li className="text-3xl font-bold">Connect</li>
           <ul className="flex gap-4">
-            <li className="text-white">
-              <Image src="/facebook.svg" alt="logo" width={20} height={20} />
+            <li className="">
+              <FiFacebook size={25} className="hover:scale-125" />
             </li>
-            <li>Logo</li>
-            <li>Logo</li>
-            <li>Logo</li>
+            <li>
+              <FiTwitter size={25} className="hover:scale-125" />
+            </li>
+            <li>
+              <FiInstagram size={25} className="hover:scale-125" />
+            </li>
+            <li>
+              <FiLinkedin size={25} className="hover:scale-125" />
+            </li>
           </ul>
           <li>
             Keep up to date with latest news and update about Codiqa, simply

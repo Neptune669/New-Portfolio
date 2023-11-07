@@ -18,23 +18,19 @@ body {
   color: #0174be;
 }
 .bg-primary {
-  background-color: #fb17ce;
+  background-color: #0c356a;
 }
 .bg-secondary {
   background-color: #210d94;
 }
 .btn {
   border-radius: 3.125rem 3.125rem 0rem 3.125rem;
-  /* background: #fb17ce; */
   box-shadow: 0px 20px 30px 0px rgba(34, 34, 34, 0.07);
-  /* padding: 10px 1.10063rem; */
 }
 .white-btn {
   border-radius: 0rem 3.125rem 3.125rem 3.125rem;
-  /* background: #fff; */
+
   box-shadow: 0px 20px 30px 0px rgba(33, 33, 33, 0.07);
-  /* color: black; */
-  /* padding: 10px 1.10063rem; */
 }
 .border-2 {
   border-radius: 50px;

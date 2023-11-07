@@ -13,30 +13,24 @@ const NavBar = () => {
             <Image src="/logo.png" alt="Logo" width={180} height={180} />
           </figure>
           <ul className="hidden text-white lg:flex lg:items-center lg:gap-4 ">
-            <li>
+            <li className="hover:text-[#FFF0CE]">
               {" "}
               <Link href="/">Home</Link>{" "}
             </li>
-            <li>
-              <Link className="hover:text-primary" href="/about">
-                About us
-              </Link>
+            <li className="hover:text-[#FFF0CE]">
+              <Link href="/about">About us</Link>
             </li>
-            <li>
+            <li className="hover:text-[#FFF0CE]">
               <Link href="/services">Services</Link>{" "}
             </li>
-            <li>
+            <li className="hover:text-[#FFF0CE]">
               <Link href="/portfolio">Portfolio</Link>{" "}
             </li>
-            {/* <li>News</li>
-            <li>Elements</li>
-            <li>Shop</li> */}
           </ul>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-6">
           <button className="flex items-center gap-2 px-3 py-2 text-sm font-extrabold bg-[#FB17CE] text-white btn">
-            <Image src={save} alt="Search" width={20} height={20} /> Support
-            site
+            <Image src={save} alt="Search" width={20} height={20} /> Clint Area
           </button>
           <button className="flex items-center gap-2 text-sm font-extrabold text-white ">
             <Image src={search} alt="Search" width={20} height={20} />
